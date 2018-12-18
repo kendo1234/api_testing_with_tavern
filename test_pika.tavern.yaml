@@ -8,7 +8,9 @@ stages:
       method: GET
 
     response:
-      status_code: 200
+      status_code:
+        - 200
+        - 301
       headers:
         content-type: application/json
       body:
