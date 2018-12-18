@@ -1,0 +1,15 @@
+test_name: Pikachu! I choose you!
+
+stages:
+  - name: Retreive Pikachu's pokedex entry
+
+    request:
+      url: https://pokeapi.co/api/v2/pokemon/pikachu/
+      method: GET
+
+    response:
+      status_code: 200
+      headers:
+        content-type: application/json
+      body:
+        name: pikachu
